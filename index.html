@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- === Header Starts === -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Project Page Template</title>
+
+  <link href="./assets/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/font.css" rel="stylesheet" type="text/css">
+  <link href="./assets/style.css" rel="stylesheet" type="text/css">
+</head>
+<!-- === Header Ends === -->
+
+
+<body>
+
+
+<!-- === Home Section Starts === -->
+<div class="section">
+  <!-- === Title Starts === -->
+  <div class="header">
+    <div class="logo">
+      <a href="https://genforce.github.io/" target="_blank"><img src="./assets/genforce.png"></a>
+    </div>
+    <div class="title" style="padding-top: 25pt;">
+     <!-- <img src="./assets/ATS_logo.svg" alt="ATS logo"> -->
+     Adaptive Token Sampling for Efficient Vision Transformers
+    </div>
+  </div>
+  </br>
+  <!-- === Title Ends === -->
+  <div class="author">
+    <a href="https://mohsenfayyaz89.github.io/" target="_blank">Mohsen Fayyaz</a><sup>1,6,</sup>,&nbsp;
+    <a href="https://soroush-abbasi.github.io/" target="_blank">Soroush Abbasi Koohpayegani</a><sup>2,*</sup>,&nbsp;
+    <a href="https://farnoushrj.github.io/" target="_blank">Farnoush Rezaei-Jafari</a><sup>3,4,*</sup>,</br>
+    <a href="https://www.microsoft.com/applied-sciences/people/sunando-sengupta" target="_blank">Sunando Sengupta</a><sup>1</sup>,
+    <a href="https://scholar.google.com/citations?user=w7fqrYYAAAAJ&hl=en" target="_blank">Hamid-Reza Vaezi-Joze</a><sup>5</sup>,
+    <a href="https://www.microsoft.com/applied-sciences/people/eric-sommerlade" target="_blank">Eric Sommerlade</a><sup>1</sup>,
+    <a href="https://scholar.google.com/citations?user=c9XXy4MAAAAJ&hl=en" target="_blank">Hamed Pirsiavash</a><sup>2</sup>,
+    <a href="https://scholar.google.de/citations?user=1CLaPMEAAAAJ&hl=de" target="_blank">Juergen Gall</a><sup>6</sup>,
+    
+  </div>
+  <div class="institution">
+    <sup>1</sup>Microsoft, <sup>2</sup>University of California, Davis, <sup>3</sup>Machine Learning Group, Technical University of Berlin, <sup>4</sup>Berlin Institute for the Foundations of Learning and Data, <sup>5</sup>Meta Reality Labs, <sup>6</sup>University of Bonn
+  </div>
+    <p style="text-align: center; color: #182468;"><strong>* denotes equal contribution.</strong></strong></p>
+  <div class="link">
+    <a href="https://arxiv.org/pdf/2111.15667.pdf" class="btn btn-primary" style="background: #03A9F4; font-size: 20px; width: 100px; color: white;">Paper</a>
+    <a href="" class="btn btn-primary" style="background: #03A9F4; font-size: 20px; width: 100px; color: white;">Code</a>
+  </div>
+  </br>
+  <div>
+    <img src="./assets/ats_teaser.gif" alt="ATS teaser" style="width: 950px;">
+  </div>
+</div>
+<!-- === Home Section Ends === -->
+
+
+<!-- === Overview Section Starts === -->
+<div class="section">
+  <div class="title">Overview</div>
+  <div class="body">
+While state-of-the-art vision transformer models achieve promising results in image classification, they are computationally expensive and require many GFLOPs. Although the GFLOPs of a vision transformer can be decreased by reducing the number of tokens in the network, there is no setting that is optimal for all input images. In this work, we therefore introduce a differentiable parameter-free Adaptive Token Sampler (ATS) module, which can be plugged into any existing vision transformer architecture. ATS empowers vision transformers by scoring and adaptively sampling significant tokens. As a result, the number of tokens is not constant anymore and varies for each input image. By integrating ATS as an additional layer within the current transformer blocks, we can convert them into much more efficient vision transformers with an adaptive number of tokens. Since ATS is a parameter-free module, it can be added to the off-the-shelf pre-trained vision transformers as a plug and play module, thus reducing their GFLOPs without any additional training. Moreover, due to its differentiable design, one can also train a vision transformer equipped with ATS. We evaluate the efficiency of our module in both image and video classification tasks by adding it to multiple SOTA vision transformers.Our proposed module improves the SOTA by reducing their computational costs (GFLOPs) by times, while preserving their accuracy on the ImageNet, Kinetics-400, and Kinetics-600 datasets.
+
+  </div>
+</div>
+<!-- === Overview Section Ends === -->
+
+
+<!-- === Result Section Starts === -->
+<div class="section">
+  <div class="title">Results</div>
+  <div class="body">
+    The gradual token sampling procedure in the multi-stage DeiT-S+ATS model:
+
+    <!-- Adjust the number of rows and columns (EVERY project differs). -->
+    <table width="100%" style="margin: 20pt 0; text-align: center;">
+      <tr>
+        <td><img src="./assets/token_removal.png" width="90%"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- === Result Section Ends === -->
+
+
+<!-- === Reference Section Starts === -->
+<div class="section">
+  <div class="bibtex">BibTeX</div>
+<pre>
+@article{ATS,
+  title   = {Adaptive Token Sampling for Efficient Vision Transformers},
+  author  = {Mohsen Fayyaz and Soroush Abbasi Koohpayegani and Farnoush Rezaei Jafari and Sunando Sengupta and Hamid Reza Vaezi Joze and Eric Sommerlade and Hamed Pirsiavash and Juergen Gall},
+  journal = {European Conference on Computer Vision},
+  year    = {2022}
+}
+</pre>
+
+  <!-- BZ: we should give other related work enough credits, -->
+  <!--     so please include some most relevant work and leave some comment to summarize work and the difference. -->
+</div>
+<!-- === Reference Section Ends === -->
+
+</body>
+</html>
