@@ -60,7 +60,7 @@
 <div class="section">
   <div class="title">Overview</div>
   <div class="body">
-While state-of-the-art vision transformer models achieve promising results in image classification, they are computationally expensive and require many GFLOPs. Although the GFLOPs of a vision transformer can be decreased by reducing the number of tokens in the network, there is no setting that is optimal for all input images. In this work, we therefore introduce a differentiable parameter-free Adaptive Token Sampler (ATS) module, which can be plugged into any existing vision transformer architecture. ATS empowers vision transformers by scoring and adaptively sampling significant tokens. As a result, the number of tokens is not constant anymore and varies for each input image. By integrating ATS as an additional layer within the current transformer blocks, we can convert them into much more efficient vision transformers with an adaptive number of tokens. Since ATS is a parameter-free module, it can be added to the off-the-shelf pre-trained vision transformers as a plug and play module, thus reducing their GFLOPs without any additional training. Moreover, due to its differentiable design, one can also train a vision transformer equipped with ATS. We evaluate the efficiency of our module in both image and video classification tasks by adding it to multiple SOTA vision transformers.Our proposed module improves the SOTA by reducing their computational costs (GFLOPs) by times, while preserving their accuracy on the ImageNet, Kinetics-400, and Kinetics-600 datasets.
+While state-of-the-art vision transformer models achieve promising results in image classification, they are computationally expensive and require many GFLOPs. Although the GFLOPs of a vision transformer can be decreased by reducing the number of tokens in the network, there is no setting that is optimal for all input images. In this work, we therefore introduce a differentiable parameter-free Adaptive Token Sampler (ATS) module, which can be plugged into any existing vision transformer architecture. ATS empowers vision transformers by scoring and adaptively sampling significant tokens. As a result, the number of tokens is not constant anymore and varies for each input image. By integrating ATS as an additional layer within the current transformer blocks, we can convert them into much more efficient vision transformers with an adaptive number of tokens. Since ATS is a parameter-free module, it can be added to the off-the-shelf pre-trained vision transformers as a plug and play module, thus reducing their GFLOPs without any additional training. Moreover, due to its differentiable design, one can also train a vision transformer equipped with ATS. We evaluate the efficiency of our module in both image and video classification tasks by adding it to multiple SOTA vision transformers. Our proposed module improves the SOTA by reducing their computational costs (GFLOPs) by times, while preserving their accuracy on the ImageNet, Kinetics-400, and Kinetics-600 datasets.
 
   </div>
 </div>
@@ -100,6 +100,15 @@ While state-of-the-art vision transformer models achieve promising results in im
   <!--     so please include some most relevant work and leave some comment to summarize work and the difference. -->
 </div>
 <!-- === Reference Section Ends === -->
+
+<div class="section">
+    <div class="title">Acknowledgements</div>
+    <div class="body"> Farnoush Rezaei Jafari acknowledges support by the Federal Ministry of Education and Research (BMBF) for the Berlin Institute for the Foundations of Learning and Data (BIFOLD) (01IS18037A). Farnoush Rezaei Jafari acknowledges support by the Federal Ministry of Education and Research (BMBF) for the Berlin Institute for the Foundations of Learning and Data (BIFOLD) (01IS18037A).</div>
+    <div class="body">Juergen Gall has been supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) GA1927/4-2 (FOR 2535 Anticipating Human Behavior), iBehave, and the ERC Consolidator Grant FORHUE (101044724).</div>
+    <div class="body">
+        This template was originally made by <a href="https://github.com/genforce/genforce.github.io">GenForce</a>.
+    </div>
+</div>
 
 </body>
 </html>
