@@ -49,7 +49,7 @@
     <a href="https://scholar.google.com/citations?user=w7fqrYYAAAAJ&hl=en" target="_blank" style="color: purple">Hamid-Reza Vaezi-Joze</a>,
     <a href="https://www.microsoft.com/applied-sciences/people/eric-sommerlade" target="_blank" style="color: purple">Eric Sommerlade</a>,
     <a href="https://scholar.google.com/citations?user=c9XXy4MAAAAJ&hl=en" target="_blank" style="color: purple">Hamed Pirsiavash</a>,
-    <a href="https://scholar.google.de/citations?user=1CLaPMEAAAAJ&hl=de" target="_blank" style="color: purple">Juergen Gall</a>,
+    <a href="https://scholar.google.de/citations?user=1CLaPMEAAAAJ&hl=de" target="_blank" style="color: purple">Juergen Gall</a>
   </div>
   <!--
   <div class="institution">
@@ -62,7 +62,7 @@
     <p style="text-align: center; color: black; font-size: 15px"><strong>* denotes equal contribution.</strong></strong></p>
   <div class="link">
     <a href="https://arxiv.org/pdf/2111.15667.pdf" class="btn" style="width: 100px">Paper</a>
-    <a href="" class="btn" style="width: 200px">Code (comming soon)</a>
+    <a href="" class="btn" style="width: 100px">Code</a>
   </div>
   </br>
   <hr style=" border-top: 4px solid #D3D2D2;
@@ -78,13 +78,18 @@
 
 <!-- === Overview Section Starts === -->
 <div class="section">
-  <div class="title">Overview</div>
+  <div class="title">Overview Video</div>
+    <div style="text-align: center">
+    <iframe width="700px" height="400" src="https://www.youtube.com/embed/NJvyCcRjMfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+<hr style=" border-top: 4px solid #D3D2D2;
+    border-radius: 5px;">
+  <div class="title">Abstract</div>
   <div class="body" style="font-size: 19px">
 While state-of-the-art vision transformer models achieve promising results in image classification, they are computationally expensive and require many GFLOPs. Although the GFLOPs of a vision transformer can be decreased by reducing the number of tokens in the network, there is no setting that is optimal for all input images. In this work, we therefore introduce a differentiable parameter-free Adaptive Token Sampler (ATS) module, which can be plugged into any existing vision transformer architecture. ATS empowers vision transformers by scoring and adaptively sampling significant tokens. As a result, the number of tokens is not constant anymore and varies for each input image. By integrating ATS as an additional layer within the current transformer blocks, we can convert them into much more efficient vision transformers with an adaptive number of tokens. Since ATS is a parameter-free module, it can be added to the off-the-shelf pre-trained vision transformers as a plug and play module, thus reducing their GFLOPs without any additional training. Moreover, due to its differentiable design, one can also train a vision transformer equipped with ATS. We evaluate the efficiency of our module in both image and video classification tasks by adding it to multiple SOTA vision transformers.
 Our proposed module improves the SOTA by reducing their computational costs (GFLOPs) by 2 times, while preserving their accuracy on the ImageNet, Kinetics-400, and Kinetics-600 datasets. 
-
-
-  </div>
+</div>
 </div>
 <!-- === Overview Section Ends === -->
 
